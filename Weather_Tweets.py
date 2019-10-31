@@ -1,7 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
 
 
 # Dependencies
@@ -14,7 +10,7 @@ import datetime
 import sys
 import os
 
-sys.path.append("../..")
+
 
 consumer_key = os.environ.get("consumer_key")
 consumer_secret = os.environ.get("consumer_secret")
@@ -22,14 +18,6 @@ access_token = os.environ.get("access_token")
 access_token_secret = os.environ.get("access_token_secret")
 weather_api_key = os.environ.get("weather_api_key")
 
-# In[3]:
-
-
-# Weather API Key
-#3df5bc1f742478ec52ffedc003c6955c
-
-
-# In[4]:
 
 
 # Create a function that gets the weather in London and Tweets it
