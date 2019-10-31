@@ -41,7 +41,7 @@ def WeatherTweet():
     api = tweepy.API(auth, parser=tweepy.parsers.JSONParser())
 
     # Tweet the weather
-    api_update_status("Weather in Washington D.C.:" +                      (dateime.dateime.now().strftime("%I:%M %p")+" " +                       str(weather_json["main"]["temp"])+"F"))
+    api.update_status("Weather in Washington D.C.:" +                      (dateime.dateime.now().strftime("%I:%M %p")+" " +                       str(weather_json["main"]["temp"])+"F"))
         
 
     # Print success message
